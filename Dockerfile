@@ -1,7 +1,7 @@
 FROM ubuntu:groovy
-LABEL maintainer "sahyam2019 <sahyam.11907710@lpu.in>"
+LABEL maintainer "ashwinstr <ashwinstr@gmail.com>"
 
-RUN ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+RUN ln -fs /usr/share/zoneinfo/Asia/Kalkatta /etc/localtime
 RUN apt update && apt -y upgrade && apt install -y tzdata locales
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
